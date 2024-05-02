@@ -1,0 +1,33 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"
+    ></script>
+  </head>
+  <body>
+    <img src="SodaUp Logo.svg" width="400" height="400" />
+    <canvas
+      class="glslCanvas"
+      data-fragment-url="shader.frag"
+      style="position: absolute; top: 400; left: 0; z-index: 1"
+      height="500px"
+      width="500px"
+    ></canvas>
+    <canvas
+      id="canvas"
+      width="500px"
+      height="500px"
+      style="position: absolute; top: 401; left: 0"
+    ></canvas>
+    <img
+      src="mug.svg"
+      id="mug"
+      style="position: absolute; top: 400; left: 0; z-index: 2"
+      width="600px"
+      height="500px"
+    />
+    <script src="Soda.js" async defer></script>
+  </body>
+</html>
